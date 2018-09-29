@@ -1,0 +1,47 @@
+<html>
+<head>
+<script type="text/javascript">
+    function validate(){
+        if(document.myform.name.value == ""){
+            alert("Please provide your name ");
+            document.myform.name.focus();
+            return false;
+        }
+        if(document.myform.email.value == "")
+            {
+                alert("Please provie your email");
+                document.myform.email.focus();
+                return false;
+            }
+        if(document.myform.job.value == "")
+            {
+                alert("Please provie your email");
+                document.myform.job.focus();
+                return false;
+            }
+        return true;
+    }
+    
+    </script>
+</head>
+    <body>
+    <form action="click.html" name="myForm" onsubmit="return(validate());" >
+        <p style="text-align: left">
+            Enter name*<br>
+            Enter job*<br>
+            Enter Email <br>
+            
+        <p>
+        <p style="align-content: right">
+        <input type="text" name="name" style="align-content: right"><br>
+        <input type="text" name="name" style="align-content: right"><br>
+        <input type="text" name="name" style="align-content: right"></p><br>
+<!--
+        Enter job*<input type="text" name="name" ><br>
+        Enter Email*<input type="text" name="email"><br>
+-->
+        <input type="submit">
+        </form>
+        
+    </body>
+</html>

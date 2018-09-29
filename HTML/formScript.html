@@ -1,0 +1,29 @@
+<html>
+<head>
+<script type="text/javascript">
+    function validate(){
+        if(document.myform.name.value == ""){
+            alert("Please provide your name ");
+            document.myform.name.focus();
+            return false;
+        }
+        if(document.myform.email.value == "")
+            {
+                alert("Please provie your email");
+                document.myform.email.focus();
+                return false;
+            }
+        return(true);
+    }
+    
+    </script>
+</head>
+    <body>
+    <form action="click.html" name="myForm" onsubmit="return(validate());">
+        Enter name<input type="text" name="name"><br>
+        Enter Email<input type="text" name="email"><br>
+        <input type="submit">
+        </form>
+        
+    </body>
+</html>

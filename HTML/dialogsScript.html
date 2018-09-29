@@ -1,0 +1,27 @@
+<html>
+<head>
+    <script type="text/javascript">
+    function getConfiguration(){
+        var retVal = confirm("Do you want to continue ?");
+        if(retVal == true){
+            alert("user wants to continue");
+        return true;
+    }
+        else{
+            alert("user does not wanr tp continuie");
+            return false;
+            
+        }
+    }
+    </script>
+    </head>
+    <body>
+    <script type="text/javascript">
+        var retvalue = prompt("Enter yoyr name: ");
+        alert("your namne is "+retvalue);
+        
+        </script>
+        <br>
+        <input type="button" value="click me" onclick="getConfiguration();"/>
+    </body>
+</html>
